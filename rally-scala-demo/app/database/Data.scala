@@ -1,0 +1,85 @@
+package database
+
+import models.DoctorDetails
+
+
+object DoctorData {
+
+  private val doctorDataList = List(
+    DoctorDetails(firstName = "Bailey",
+      lastName = "Tanya J",
+      qualification = "MD",
+      specialization = "Pediatrics",
+      addressLine1 = "12720 Bass Lake Rd",
+      addressLine2 = "Maple Grove, MN 55369",
+      phone = "(763) 559-2861 PHONE",
+      distance = "0.7",
+      additionalLocations = Seq(),
+      enrollmentInfo = "Info",
+      additionalLocation = "2",
+      evaluation = "Not Evaluated For Any Care",
+      acceptance = "Accepting Only Critical Patients",
+      botDetails = "Office Visit - Primary Doctor - Established Patient - Moderate Complexity"),
+    DoctorDetails(firstName = "Meier",
+      lastName = "Diane M",
+      qualification = "MD",
+      specialization = "Pediatrics",
+      addressLine1 = "5678 Washington Avenue",
+      addressLine2 = "Orange County, LA-09876",
+      phone = "(763) 559-2861 PHONE",
+      distance = "0.4",
+      additionalLocations = Seq(),
+      enrollmentInfo = "Info",
+      additionalLocation = "5",
+      evaluation = "Evaluated For All Care",
+      acceptance = "Accepting Only Critical Patients",
+      botDetails = "Office Visit - Primary Doctor - Established Patient - Moderate Complexity"),
+    DoctorDetails(firstName = "Pflaster",
+      lastName = "Gregory J Jr",
+      qualification = "MBBS",
+      specialization = "Urgent Care Medicine, Family Practice",
+      addressLine1 = "9222 Lake View Avenue",
+      addressLine2 = "Davidson County, KT-44432",
+      phone = "9828299320",
+      distance = "10",
+      additionalLocations = Seq(),
+      enrollmentInfo = "Info",
+      additionalLocation = "7",
+      evaluation = "Not Evaluated For Premium Care",
+      acceptance = "Accepting All Patients",
+      botDetails = "Online Appointment - Primary Doctor - Established Patient - Moderate Complexity"),
+    DoctorDetails(firstName = "Phillips",
+      lastName = "Daniela M",
+      qualification = "MBBS",
+      specialization = "Pediatrics",
+      addressLine1 = "9222 Sea View Avenue",
+      addressLine2 = "Sam County, FL-12349",
+      phone = "7865456789",
+      distance = "0.3",
+      additionalLocations = Seq(),
+      enrollmentInfo = "Info",
+      additionalLocation = "0",
+      evaluation = "Not Evaluated For Premium Care",
+      acceptance = "Accepting All Patients",
+      botDetails = "Office Visit - Primary Doctor - Established Patient - Moderate Complexity"),
+    DoctorDetails(firstName = "Swan",
+      lastName = "Thomas T",
+      qualification = "MD",
+      specialization = "Family Practice",
+      addressLine1 = "9222 Sea View Avenue",
+      addressLine2 = "Sam County, FL-12349",
+      phone = "7865456789",
+      distance = "1.3",
+      additionalLocations = Seq(),
+      enrollmentInfo = "Info",
+      additionalLocation = "0",
+      evaluation = "Not Evaluated For Premium Care",
+      acceptance = "Accepting All Patients",
+      botDetails = "Office Visit - Primary Doctor - Established Patient - Moderate Complexity")
+  )
+
+  def getDetails(): List[DoctorDetails] = {
+    doctorDataList
+  }
+
+}
